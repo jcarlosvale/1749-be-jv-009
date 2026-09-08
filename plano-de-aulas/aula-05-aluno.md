@@ -210,7 +210,7 @@ Duas dores nasceram nesta aula, e não vamos resolvê-las hoje:
 
 A dor 1 é a Aula 6 inteira. A dor 2 começa na Aula 6 e se aprofunda no módulo seguinte.
 
-> **Registre a decisão.** Um ADR de dez linhas em `docs/adr/0003-quebra-do-monolito.md`: *contexto* (deploy acoplado), *decisão* (cortar por domínio em três serviços com bases segregadas), *alternativas* (manter monólito modular; cortar por camada), *consequências* (chamadas remotas, falha parcial, fim do `JOIN`). Arquitetura sem registro vira lenda oral — em seis meses ninguém lembra por que foi assim.
+> **Registre a decisão.** Um ADR de dez linhas em `docs/adr/ADR-003-quebra-do-monolito.md`: *contexto* (deploy acoplado), *decisão* (cortar por domínio em três serviços com bases segregadas), *alternativas* (manter monólito modular; cortar por camada), *consequências* (chamadas remotas, falha parcial, fim do `JOIN`). Arquitetura sem registro vira lenda oral — em seis meses ninguém lembra por que foi assim.
 
 ---
 

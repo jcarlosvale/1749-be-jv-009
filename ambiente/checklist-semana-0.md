@@ -53,7 +53,7 @@ Rodar `mvn -s settings.xml dependency:get -Dartifact=<GAV>` para cada um. **Marq
 | 4.2 | **3–4 processos Java simultâneos** em portas 8081/8082/8083/8761 | subir dois `spring-boot:run` ao mesmo tempo | Aulas 5–6 |
 | 4.3 | `https://economia.awesomeapi.com.br/last/USD-BRL` | abrir no navegador / `curl` | esperado **bloqueado** → provedor local |
 | 4.4 | Sites externos (start.spring.io, Maven Central, GitHub) | tentar abrir | confirma "tudo via Nexus"; decide como distribuir o repositório |
-| 4.5 | `https://github.com/jessehaniel85/1749-be-jv-009` | abrir / `git clone` | se bloqueado, material vai por zip (Teams/LMS) |
+| 4.5 | `https://github.com/jcarlosvale/1749-be-jv-009` | abrir / `git clone` | se bloqueado, material vai por zip (Teams/LMS) |
 
 ## 5. Colaboração e didática no Teams (bloqueante p/ projeto em grupo)
 

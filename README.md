@@ -19,4 +19,4 @@ Como usar
 2. Acesse /plano-de-aulas a cada aula para ler o conteúdo antes das aulas, a fim de praticar juntos a PBL, com foco nas discussões e práticas.
 3. Acompanhe o projeto guiado sendo desenvolvido a cada aula e evoluindo (monólito → serviços → código limpo), como referência para o projeto final do seu grupo.
 
-Turma irmã: a turma 1751 (be-jv-010, Nível III) roda nas mesmas datas — repositório `jessehaniel85/1751-be-jv-010`.
+Turma irmã: a turma 1751 (be-jv-010, Nível III) roda nas mesmas datas, com outro docente.

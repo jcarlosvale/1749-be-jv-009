@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Modelo de settings.xml para resolver TODAS as dependências via Nexus Caixa.
+  Modelo de settings.xml para resolver TODAS as dependências via Nexus corporativo.
   Substituir <NEXUS_URL>, usuário e senha pelos valores reais do ambiente.
   Objetivo: nenhum download direto do Maven Central — tudo passa pelo Nexus.
   Validar na Semana 0 com:  mvn -s settings.xml dependency:get -Dartifact=org.springframework.boot:spring-boot-starter-data-redis:3.3.0
@@ -9,7 +9,7 @@
 
   <servers>
     <server>
-      <id>nexus-caixa</id>
+      <id>nexus-corporativo</id>
       <username>${env.NEXUS_USER}</username>
       <password>${env.NEXUS_PASS}</password>
     </server>
@@ -18,8 +18,8 @@
   <mirrors>
     <!-- Espelha TODO o tráfego de artefatos para o Nexus interno. -->
     <mirror>
-      <id>nexus-caixa</id>
-      <name>Nexus Caixa - proxy de tudo</name>
+      <id>nexus-corporativo</id>
+      <name>Nexus corporativo - proxy de tudo</name>
       <url><NEXUS_URL>/repository/maven-public/</url>
       <mirrorOf>*</mirrorOf>
     </mirror>
@@ -30,7 +30,7 @@
       <id>nexus</id>
       <repositories>
         <repository>
-          <id>nexus-caixa</id>
+          <id>nexus-corporativo</id>
           <url><NEXUS_URL>/repository/maven-public/</url>
           <releases><enabled>true</enabled></releases>
           <snapshots><enabled>true</enabled></snapshots>
@@ -38,7 +38,7 @@
       </repositories>
       <pluginRepositories>
         <pluginRepository>
-          <id>nexus-caixa</id>
+          <id>nexus-corporativo</id>
           <url><NEXUS_URL>/repository/maven-public/</url>
         </pluginRepository>
       </pluginRepositories>

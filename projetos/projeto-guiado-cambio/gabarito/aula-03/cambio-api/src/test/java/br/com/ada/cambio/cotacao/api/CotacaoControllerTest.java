@@ -2,6 +2,7 @@ package br.com.ada.cambio.cotacao.api;
 
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -15,6 +16,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.http.MediaType;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.web.servlet.MockMvc;
 
@@ -38,6 +40,29 @@ class CotacaoControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.moeda").value("USD"))
                 .andExpect(jsonPath("$.valorCotacao").value(5.4321));
+    }
+
+    @Test
+    @DisplayName("PUT /cotacoes/USD atualiza a cotação local e devolve 200")
+    void atualizacaoDevolve200() throws Exception {
+        when(servico.atualizar("USD", new BigDecimal("5.9000"))).thenReturn(new Cotacao(Moeda.USD,
+                new BigDecimal("5.9000"), LocalDateTime.of(2026, 9, 14, 10, 0)));
+
+        mockMvc.perform(put("/cotacoes/USD")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("{\"valorCotacao\": 5.9000}"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.valorCotacao").value(5.9000));
+    }
+
+    @Test
+    @DisplayName("PUT /cotacoes/USD com valor negativo devolve 400")
+    void atualizacaoInvalidaDevolve400() throws Exception {
+        mockMvc.perform(put("/cotacoes/USD")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("{\"valorCotacao\": -1}"))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.erros[0].campo").value("valorCotacao"));
     }
 
     @Test

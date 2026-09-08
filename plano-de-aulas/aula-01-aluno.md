@@ -253,7 +253,9 @@ Uma história só entra na sprint com **critérios de aceite verificáveis**. Co
 - ❌ *"Cadastrar cliente."*
 - ✅ *"`POST /clientes` com nome, CPF (11 dígitos), data de nascimento, estado civil e sexo devolve **201** com o `id` gerado; CPF ausente ou fora do formato devolve **400**; CPF já cadastrado devolve **conflito** com mensagem clara; `GET /clientes/{cpf}` devolve **200** com os dados ou **404**."*
 
-A segunda versão pode ser conferida por qualquer pessoa, sem discussão. E a nossa **Definition of Done** para todo card do módulo é: compila · `mvn test` verde · o endpoint responde no cliente HTTP · o card foi movido · o `README` foi atualizado.
+A segunda versão pode ser conferida por qualquer pessoa, sem discussão. E a nossa **Definition of Done** — o acordo sobre o que significa "pronto" — começa assim: compila · o endpoint responde no cliente HTTP · o card foi movido · o `README` foi atualizado.
+
+Repare que **`mvn test` verde não está na lista de hoje** — e não está por um motivo: ainda não escrevemos nenhum teste. Ele entra na DoD **a partir da Aula 2**, quando a suíte existir. Isso não é descuido: o Scrum Guide trata a Definition of Done como um acordo que o time **amplia conforme amadurece**. Uma DoD que promete o que o time ainda não consegue entregar é exatamente o tipo de cerimônia vazia que criticamos há pouco.
 
 Feita a planning, movemos H1 para *Fazendo* e escrevemos o primeiro pedaço do monólito:
 
