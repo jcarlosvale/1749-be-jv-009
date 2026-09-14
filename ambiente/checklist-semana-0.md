@@ -1,8 +1,8 @@
 # Checklist Semana 0 — Descoberta do Ambiente (BE-JV-009 · turma 1749)
 
-> **Tarefa prévia (D-3, antes de 09/09).** Rode as seções abaixo na sua máquina da rede corporativa e devolva o resultado (print ou texto) no canal da turma. Nas turmas anteriores este checklist foi feito ao vivo e consumiu a Aula 1 — desta vez ele vem antes. Consolidação em `relatorio-semana-0.md`.
+> **Tarefa prévia (D-3, antes de 16/09).** Rode as seções abaixo na sua máquina da rede corporativa e devolva o resultado (print ou texto) no canal da turma. Nas turmas anteriores este checklist foi feito ao vivo e consumiu a Aula 1 — desta vez ele vem antes. Consolidação em `relatorio-semana-0.md`.
 
-**Quando:** antes da Aula 1 (09/09); consolidação de 10 min na abertura.
+**Quando:** antes da Aula 1 (16/09); consolidação de 10 min na abertura.
 **Por quê:** este módulo depende pouco de infra (só JVM + Maven + H2), mas a **Aula 6 (Eureka + OpenFeign)** precisa de artefatos **Spring Cloud** no Nexus. Sem fechar a seção 3, a Aula 6 fica no escuro (Plano B × Plano C).
 **Saída:** `relatorio-semana-0.md` preenchido com o veredito por tema.
 

@@ -1,8 +1,8 @@
 # Projeto Final em Grupo — BE-JV-009 (Nível II)
 
-**Formato:** grupos (3–4 integrantes) · **tema livre** · apresentação na **Aula 9 (28/09)**.
+**Formato:** grupos (3–4 integrantes) · **tema livre** · apresentação na **Aula 9 (05/10)**.
 **Apresentado na Aula 1.** Desenvolvido majoritariamente **dentro do tempo de aula** (2ª metade de cada encontro) + apresentação na Aula 9.
-**Entrega:** repositório (ou zip) até **28/09 às 09:00 BRT**, antes das apresentações.
+**Entrega:** repositório (ou zip) até **05/10 às 09:00 BRT**, antes das apresentações.
 
 ---
 
@@ -121,5 +121,5 @@ Como rodamos: Eureka+Feign | registro estático  ·  Restrições encontradas: <
 
 ---
 
-## 6. Apresentação (Aula 9 · 28/09)
+## 6. Apresentação (Aula 9 · 05/10)
 Cada grupo: **demo** (2 serviços conversando) + **defesa das decisões** (não só "o que faz", mas "por que assim" e "o que descartamos") + **arguição individual** do docente e dos pares (cada integrante responde por uma parte) + reflexão sobre uso de IA. Tempo por grupo ≈ 15 min (10 apresentação + 5 arguição).

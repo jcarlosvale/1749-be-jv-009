@@ -12,7 +12,7 @@ Estrutura
 - /ambiente — checklist de configuração e `settings.xml` do Nexus
 - /plano-de-aulas — material por encontro (material do aluno; deck só da Aula 1)
 - /projetos — código do projeto guiado (API de Câmbio) com evolução por aula, pacote de requisitos e descrição do projeto final em grupo
-- cronograma.png — calendário das 9 aulas (09/09 → 28/09/2026)
+- cronograma.png — calendário das 9 aulas (16/09 → 05/10/2026)
 
 Como usar
 1. Acesse a pasta /ambiente para verificar o checklist de configuração do ambiente (tarefa prévia à Aula 1).

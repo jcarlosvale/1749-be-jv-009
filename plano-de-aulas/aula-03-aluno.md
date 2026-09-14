@@ -288,7 +288,7 @@ A estrutura é fixa e curta: **Título · Status · Contexto · Decisão · Cons
 # ADR-001 — Manter o câmbio como monólito modular
 
 ## Status
-Aceito — 14/09/2026
+Aceito — 21/09/2026
 
 ## Contexto
 Três domínios (cliente, cotação, ordem) com um time único, em formação,

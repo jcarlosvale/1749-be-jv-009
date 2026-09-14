@@ -360,7 +360,7 @@ E é isso que o **ADR** registra. Um por padrão, curto, no `docs/adr/`:
 # ADR-006: Strategy para o cálculo da operação por moeda
 
 ## Status
-Aceito — 25/09/2026
+Aceito — 02/10/2026
 
 ## Contexto
 O cálculo do valor total varia por moeda (USD tem spread; EUR não) e novas
